@@ -16,7 +16,13 @@ class Login extends \think\Controller
             $admin_pwd   = md5(input("post.Password"));
 
             $admin_data = Admin::get(["admin_email" => "$admin_email","admin_pwd" => "$admin_pwd"])->toArray();
+           
             if($admin_data){
+                $admin = new Admin;
+                 $admin->save([
+                    'admin_last_login'  => time()
+                ],['admin_id' => $admin_data['admin_id']]);
+
                 Session::set('admin_id',$admin_data['admin_id']);
                 Session::set('admin_name',$admin_data['admin_name']);
                 $this->success('登录成功', 'Index/index');
