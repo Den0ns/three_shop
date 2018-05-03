@@ -68,14 +68,14 @@
 <!-- <script type="text/javascript" src="__STATIC__/admin/js/calendar.php?lang=zh_cn"></script>
 <link href="__STATIC__/admin/js/calendar/calendar.css" rel="stylesheet" type="text/css" /> -->
 <div class="main-div">
-<form action="{:url('Advert/advert_add')}" method="post" enctype="multipart/form-data">
+<form action="updatas?id={$res.ad_id}" method="post" enctype="multipart/form-data">
   <table width="100%" id="general-table">
     <tr>
       <td  class="label">
         <a href="javascript:showNotice('NameNotic');" title="点击此处查看提示信息">
         <img src="__STATIC__/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息"></a>广告名称</td>
       <td>
-        <input type="text" name="ad_name" value="" size="35" />
+        <input type="text" name="ad_name" value="{$res.ad_name}" size="35" />
         <br /><span class="notice-span" style="display:block"  id="NameNotic">广告名称只是作为辨别多个广告条目之用，并不显示在广告中</span>
       </td>
     </tr>
@@ -84,7 +84,7 @@
     <tr>
       <td  class="label">广告链接</td>
       <td>
-        <input type="text" name="ad_link" value="" size="35" />
+        <input type="text" name="ad_link" value="{$res.ad_link}" size="35" />
       </td>
     </tr>
     <tr>
@@ -92,7 +92,7 @@
         <a href="javascript:showNotice('AdCodeImg');" title="点击此处查看提示信息">
         <img src="__STATIC__/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息"></a>上传广告图片</td>
       <td>
-        <input type='file' name='ad_img' size='35' />
+        <input type='file' name='ad_img' size='35' value="{$res.ad_img}" />
         <br /><span class="notice-span" style="display:block"  id="AdCodeImg">上传该广告的图片文件,或者你也可以指定一个远程URL地址为广告的图片</span>
       </td>
     </tr>
@@ -100,15 +100,19 @@
     <tr>
       <td  class="label">是否开启</td>
       <td>
-        <input type="radio" name="ad_status" value="1"  checked="true"  />开启    
-        <input type="radio" name="ad_status" value="0"  />关闭    
+        <input type="radio" name="ad_status" {:$res['ad_status']==1?'checked':''}    />开启    
+        <input type="radio" name="ad_status" {:$res['ad_status']==0?'checked':''}  />关闭    
       </td>
     </tr>
     <tr>
        <td class="label">&nbsp;</td>
        <td>
-        <input type="submit" value=" 确定 "/>
-        <input type="reset" value=" 重置 "/>
+       <input type="hidden" name="ad_id"  value="{$res.ad_id}" />
+       <input type="hidden" name="old_img"  value="{$res.ad_img}" />
+       <button class="but" type="submit" value="">确定</button>
+       <button class="but" type="submit" value="">重置</button>
+     <!--    <input type="submit" value=" 确定 "/>
+        <input type="reset" value=" 重置 "/> -->
       </td>
     </tr>
  </table>
