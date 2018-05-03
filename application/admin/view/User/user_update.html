@@ -29,25 +29,26 @@
 <span class="action-span1"><a href="index.php?act=main">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1"> &nbsp;&nbsp;&nbsp;&nbsp; 添加会员 </span>
 <div style="clear:both"></div>
 </h1><div class="main-div">
-<form method="post" action="{:url('User/user_add')}" name="theForm" onsubmit="return validate()">
+<form method="post" action="{:url('User/user_save')}" name="theForm" onsubmit="return validate()">
 <table width="100%" >
   <tr>
     <td class="label">会员名称:</td>
-    <td><input type="text" name="user_name" maxlength="60" value="" /><span class="require-field">*</span></td>
+    <td><input type="text" name="user_name" maxlength="60" value="{:$result.user_name}" /><span class="require-field">*</span></td>
   </tr>
     <tr>
     <td class="label">邮件地址:</td>
-    <td><input type="text" name="email" maxlength="60" size="40" value="" /><span class="require-field">*</span></td>
+    <td><input type="text" name="email" maxlength="60" size="40" value="{:$result.email}" /><span class="require-field">*</span></td>
   </tr>
     <tr>
     <td class="label">登录密码:</td>
-    <td><input type="password" name="user_pwd" maxlength="20" size="20" /><span class="require-field">*</span></td>
+    <td><input type="password" name="user_pwd" maxlength="20" size="20" value="{:$result.user_pwd}"/><span class="require-field">*</span></td>
   </tr>
         <tr>
     <td colspan="2" align="center">
+      <input type="hidden" value="{:$result.user_id}" name="user_id"/>
       <input type="submit" value=" 确定 " class="button" />
       <input type="reset" value=" 重置 " class="button" />
-     </td>
+    </td>
   </tr>
 </table>
 
