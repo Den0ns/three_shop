@@ -1,0 +1,53 @@
+<table width="100%" id="attrTable">
+				<tbody>
+				{volist name="attr" id="vo"}
+				{if condition="$vo['attr_type'] eq 1 AND $vo['input_type'] eq 1"}
+					<tr>
+						<td class="label">{$vo.attr_name}</td>
+						<td>	
+							<input name="attr_value_list[{$vo.attr_id}]" type="text" value="" size="20">  
+						</td>
+					</tr>
+				{/if}
+
+				{if condition="$vo['attr_type'] eq 1 AND $vo['input_type'] eq 2"}
+					<tr>
+						<td class="label">{$vo.attr_name}</td>
+						<td>
+							<select name="attr_value_list[{$vo.attr_id}][]">
+								<option value="">请选择...</option>
+								{volist name="$vo.values" id="v"}
+								<option value="{$v}">{$v}</option>
+								{/volist}
+							</select>
+						</td>
+					</tr>
+				{/if}
+				
+
+				{if condition="$vo['attr_type'] eq 2 AND $vo['input_type'] eq 2"}
+					<tr>
+						<td class="label"><a href="javascript:;" class="add">[ + ]</a>{$vo.attr_name}</td>
+						<td>
+							<select name="attr_value_list[{$vo.attr_id}][]">
+								<option value="">请选择...</option>
+								{volist name="$vo.values" id="v"}
+								<option value="{$v}">{$v}</option>
+								{/volist}
+							</select> 
+							属性价格 <input type="text" name="attr_price_list[{$vo.attr_id}][]" value="" size="5" maxlength="10">
+						</td>
+					</tr>
+					{/if}
+				{if condition="$vo['attr_type'] eq 2 AND $vo['input_type'] eq 1"}
+					<tr>
+						<td class="label"><a href="javascript:;" class="add">[ + ]</a>{$vo.attr_name}</td>
+						<td>
+							<input name="attr_value_list[{$vo.attr_id}][]" type="text" value="" size="20"> 
+							属性价格 <input type="text" name="attr_price_list[{$vo.attr_id}][]" value="" size="5" maxlength="10">
+						</td>
+					</tr>
+					{/if}
+				{/volist}
+	</tbody>
+</table>

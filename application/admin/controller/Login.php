@@ -15,7 +15,7 @@ class Login extends \think\Controller
             $admin_email = input("post.email");
             $admin_pwd   = md5(input("post.Password"));
 
-            $admin_data = Admin::get(["admin_email" => "$admin_email","admin_pwd" => "$admin_pwd"])->toArray();
+            $admin_data = Admin::get(["admin_email" => "$admin_email","admin_pwd" => "$admin_pwd","admin_status"=>0])->toArray();
            
             if($admin_data){
                 $admin = new Admin;
