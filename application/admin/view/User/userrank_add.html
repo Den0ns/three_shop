@@ -55,7 +55,7 @@ var lang_remove = "移除";
 <div style="clear:both"></div>
 </h1>
 <div class="main-div">
-<form action="user_rank.php" method="post" name="theForm" onsubmit="return validate()">
+<form action="{:url('User/userrank_add')}" method="post" >
 <table width="100%">
   <tr>
     <td class="label">会员等级名称: </td>
@@ -70,25 +70,12 @@ var lang_remove = "移除";
     <td><input type="text" name="max_points" value="0" size="10" maxlength="20" /></td>
   </tr>
   <tr>
-    <td class="label"></td>
-    <td>
-    <input type="checkbox" name="show_price" value="1"  checked="true" /> 在商品详情页显示该会员等级的商品价格</td>
-  </tr>
-  <tr>
-    <td class="label"></td>
-    <td>
-    <input type="checkbox" name="special_rank" value="1"  onClick="javascript:doSpecial()" /> 特殊会员组 <a href="javascript:showNotice('notice_special');" title="点击此处查看提示信息"><img src="__STATIC__/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息"></a>
-    <br /><span class="notice-span" style="display:block"  id="notice_special">特殊会员组的会员不会随着积分的变化而变化。</span></td>
-  </tr>
-  <tr>
     <td class="label"><a href="javascript:showNotice('notice_discount');" title="点击此处查看提示信息"><img src="__STATIC__/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息"></a>初始折扣率: </td>
     <td><input type="text" name="discount" value="100" size="10" maxlength="20" /><span class="require-field">*</span>    <br /><span class="notice-span" style="display:block"  id="notice_discount">请填写为0-100的整数,如填入80，表示初始折扣率为8折</span>
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <input type="hidden" name="act" value="insert" />
-      <input type="hidden" name="id" value="0" />
       <input type="submit" value=" 确定 " class="button" />
       <input type="reset" value=" 重置 " class="button" />
     </td>

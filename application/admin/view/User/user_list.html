@@ -16,6 +16,21 @@
   .panel-hint{
     top: 3%;
   }
+  .page{
+    padding-top: 20px;
+  }
+  .page li{
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body>
@@ -51,75 +66,36 @@
       <a href="javascript:listTable.sort('user_id'); ">编号</a><img src="__STATIC__/admin/images/sort_desc.gif">    </th>
     <th><a href="javascript:listTable.sort('user_name'); ">会员名称</a></th>
     <th><a href="javascript:listTable.sort('email'); ">邮件地址</a></th>
-    <th><a href="javascript:listTable.sort('is_validated'); ">是否已验证</a></th>
-    <th>可用资金</th>
-    <th>冻结资金</th>
-    <th>等级积分</th>
-    <th>消费积分</th>
-    <th><a href="javascript:listTable.sort('reg_time'); ">注册日期</a></th>
+     <th><a href="javascript:listTable.sort('email'); ">注册时间</a></th>
+      <th><a href="javascript:listTable.sort('email'); ">上一次登录时间</a></th>
     <th>操作</th>
-  <tr>
+    {volist name="data" id="vo"}
     <tr>
-    <td><input type="checkbox" name="checkboxes[]" value="2" notice="0"/>2</td>
-    <td class="first-cell">vip</td>
-    <td><span onclick="listTable.edit(this, 'edit_email', 2)">vip@ecshop.com</span></td>
-    <td align="center"> <img src="__STATIC__/admin/images/no.gif"> </td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0</td>
-    <td>0</td>
-    <td align="center"></td>
+    <td><input type="checkbox" name="checkboxes[]" align="center"/>{$vo.user_id}</td>
+    <td class="first-cell" align="center">{$vo.user_name}</td>
+    <td align="center"><span>{$vo.email}</span></td>
+    <td align="center"><span>{:date("Y-m-d H:i:s",$vo['reg_time'])}</span></td>
+    <td align="center"><span>{$vo.last_login}</span></td>
     <td align="center">
-      <a href="users.php?act=edit&id=2" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="users.php?act=address_list&id=2" title="收货地址"><img src="__STATIC__/admin/images/book_open.gif" border="0" height="16" width="16" /></a>
-      <a href="order.php?act=list&user_id=2" title="查看订单"><img src="__STATIC__/admin/images/icon_view.gif" border="0" height="16" width="16" /></a>
-      <a href="account_log.php?act=list&user_id=2" title="查看账目明细"><img src="__STATIC__/admin/images/icon_account.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:confirm_redirect('您确定要删除该会员账号吗？', 'users.php?act=remove&id=2')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a>
+      <a href="{:url('User/user_del',['user_id'=>$vo['user_id']])}" title="删除">删除</a>
+      <a href="{:url('User/user_update',['user_id'=>$vo['user_id']])}" title="修改">修改</a>
     </td>
   </tr>
-    <tr>
-    <td><input type="checkbox" name="checkboxes[]" value="1" notice="0"/>1</td>
-    <td class="first-cell">ecshop</td>
-    <td><span onclick="listTable.edit(this, 'edit_email', 1)">ecshop@ecshop.com</span></td>
-    <td align="center"> <img src="__STATIC__/admin/images/no.gif"> </td>
-    <td>0.00</td>
-    <td>0.00</td>
-    <td>0</td>
-    <td>0</td>
-    <td align="center"></td>
-    <td align="center">
-      <a href="users.php?act=edit&id=1" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="users.php?act=address_list&id=1" title="收货地址"><img src="__STATIC__/admin/images/book_open.gif" border="0" height="16" width="16" /></a>
-      <a href="order.php?act=list&user_id=1" title="查看订单"><img src="__STATIC__/admin/images/icon_view.gif" border="0" height="16" width="16" /></a>
-      <a href="account_log.php?act=list&user_id=1" title="查看账目明细"><img src="__STATIC__/admin/images/icon_account.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:confirm_redirect('您确定要删除该会员账号吗？', 'users.php?act=remove&id=1')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a>
-    </td>
-  </tr>
+  {/volist}
     <tr>
       <td colspan="2">
       <input type="hidden" name="act" value="batch_remove" />
       <input type="submit" id="btnSubmit" value="删除会员" disabled="true" class="button" /></td>
-      <td align="right" nowrap="true" colspan="8">
-            <!-- $Id: page.htm 14216 2008-03-10 02:27:21Z testyang $ -->
-            <div id="turn-page">
-        总计  <span id="totalRecords">2</span>
-        个记录分为 <span id="totalPages">1</span>
-        页当前第 <span id="pageCurrent">1</span>
-        页，每页 <input type='text' size='3' id='pageSize' value="15" onkeypress="return listTable.changePageSize(event)" />
-        <span id="page-link">
-          <a href="javascript:listTable.gotoPageFirst()">第一页</a>
-          <a href="javascript:listTable.gotoPagePrev()">上一页</a>
-          <a href="javascript:listTable.gotoPageNext()">下一页</a>
-          <a href="javascript:listTable.gotoPageLast()">最末页</a>
-          <select id="gotoPage" onchange="listTable.gotoPage(this.value)">
-            <option value='1'>1</option>          </select>
-        </span>
-      </div>
-      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><div class='page'>{$page}</div></td>
   </tr>
-</table>
 
+</table>
+ 
 </div>
+                             
 <!-- end users list -->
 </form>
 <div id="footer">
