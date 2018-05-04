@@ -3,7 +3,7 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
 
-class Brand extends Controller
+class Brand extends Common
 {
     public function brand_list()
     {

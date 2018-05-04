@@ -3,7 +3,7 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
 
-class Advert extends Controller
+class Advert extends Common
 {   
     // 广告列表
     public function advert_list()

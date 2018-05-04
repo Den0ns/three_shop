@@ -3,7 +3,7 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
 
-class Goods extends Controller
+class Goods extends Common
 {
     public function goods_list()
     {

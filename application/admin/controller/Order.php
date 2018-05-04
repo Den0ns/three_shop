@@ -3,7 +3,7 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
 
-class Order extends Controller
+class Order extends Common
 {	
 	//订单列表
     public function order_list()

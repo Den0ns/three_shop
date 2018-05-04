@@ -3,7 +3,7 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
 
-class User extends Controller
+class User extends Common
 {   
     //会员列表
     public function user_list()

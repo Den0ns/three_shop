@@ -86,114 +86,16 @@ var select_date_value = "如果您要清除日志,请选择清除的日期";
     <a href="javascript:listTable.sort('log_id'); ">编号</a><img src="__STATIC__/admin/images/sort_desc.gif"/></th>
     <th><a href="javascript:listTable.sort('user_id'); ">操作者</a></th>
     <th><a href="javascript:listTable.sort('log_time'); ">操作日期</a></th>
-    <th><a href="javascript:listTable.sort('ip_address'); ">IP地址</a></th>
     <th>操作记录</th>
   </tr>
+  {volist name="data" id="vo"}
     <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="465" />465</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2018-04-23 09:56:46</span></td>
-    <td width="15%" align="left"><span>127.0.0.1</span></td>
-    <td width="40%" align="left"><span>编辑会员等级: vip</span></td>
+    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="465" />{$vo.log_id}</span></td>
+    <td width="15%" class="first-cell"><span>{$vo.admin_name}</span></td>
+    <td width="20%" align="center"><span>{$vo.log_time|date="Y-m-d H:i:s",###}</span></td>
+    <td width="40%" align="left"><span>{$vo.log_info}</span></td>
   </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="464" />464</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2018-04-23 09:56:43</span></td>
-    <td width="15%" align="left"><span>127.0.0.1</span></td>
-    <td width="40%" align="left"><span>编辑会员等级: 注册用户</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="463" />463</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:26:51</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>还原数据库备份: 备份时间2009-06-17 07:23:51</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="462" />462</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:23:07</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑文章: 诺基亚牵手移动 5款热门TD手机机型推荐</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="461" />461</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:22:20</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑文章: 诺基亚牵手移动 5款热门TD手机机型推荐</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="460" />460</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:18:48</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑商品分类: GSM手机</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="459" />459</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:17:23</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑商品分类: 手机类型</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="458" />458</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:16:18</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑商店设置: </span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="457" />457</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:13:52</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑商品: KD876</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="456" />456</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:10:58</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑商品: 飞利浦9@9v</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="455" />455</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:09:05</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑商品: 诺基亚E66</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="454" />454</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:06:49</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑商品: 索爱C702c</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="453" />453</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:04:27</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>回收商品: 摩托罗拉A810</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="452" />452</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:02:49</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑商品: 诺基亚5320 XpressMusic</span></td>
-  </tr>
-    <tr>
-    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="451" />451</span></td>
-    <td width="15%" class="first-cell"><span>admin</span></td>
-    <td width="20%" align="center"><span>2009-06-17 15:00:18</span></td>
-    <td width="15%" align="left"><span>0.0.0.0</span></td>
-    <td width="40%" align="left"><span>编辑商品: 诺基亚5800XM</span></td>
-  </tr>
+  {/volist}
     <tr>
     <td colspan="2"><input name="drop_type_id" type="submit" id="btnSubmit" value="清除日志" disabled="true" class="button" /></td>
     <td align="right" nowrap="true" colspan="10">      <!-- $Id: page.htm 14216 2008-03-10 02:27:21Z testyang $ -->

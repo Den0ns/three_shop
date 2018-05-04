@@ -3,7 +3,7 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
 
-class Attribute extends Controller
+class Attribute extends Common
 {
     public function attribute_list()
     {

@@ -3,7 +3,7 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
 
-class Goodstype extends Controller
+class Goodstype extends Common
 {
     public function goodstype_list()
     {

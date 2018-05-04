@@ -1,0 +1,9 @@
+<?php 
+namespace app\admin\model;
+
+use think\Model;
+
+class Privilege extends Model
+{
+	protected $resultSetType = 'collection';
+}

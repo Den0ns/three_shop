@@ -3,7 +3,7 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
 
-class Cat extends Controller
+class Cat extends Common
 {   
     //商品分类列表
     public function cat_list()

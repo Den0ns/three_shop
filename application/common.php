@@ -10,3 +10,10 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+
+	function getlog($content=""){
+		$data['log_info'] = $content;
+		$data['log_time'] = time();
+		$data['admin_id'] = session("admin_id");
+		db('admin_log')->insert($data);
+	}
