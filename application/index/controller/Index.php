@@ -7,7 +7,8 @@ class Index extends Controller
 {	
 	//主页
     public function index()
-    {
+    {	
+    	
         return view('index');
     }
 }
