@@ -1,0 +1,1669 @@
+---------------------------------------------------------------
+[ 2018-04-28T08:04:28+08:00 ] 127.0.0.1 GET /
+[ info ] www.ec.com/ [运行时间：0.266039s][吞吐率：3.76req/s] [内存消耗：1,659.01kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:04:39+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] www.ec.com/admin/login/login.html [运行时间：0.819977s][吞吐率：1.22req/s] [内存消耗：2,864.58kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'email' => '2423503330@qq.com',
+  'Password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007316s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.299492s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `admin_email` = '2423503330@qq.com'  AND `admin_pwd` = 'e10adc3949ba59abbe56e057f20f883e'  AND `admin_status` = 0 LIMIT 1 [ RunTime:0.068160s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `admin_last_login`=1524873879  WHERE  `admin_id` = 1 [ RunTime:0.001090s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:04:41+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.ec.com/admin/index/index.html [运行时间：0.113134s][吞吐率：8.84req/s] [内存消耗：1,668.81kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Index->index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:04:41+08:00 ] 127.0.0.1 GET /admin/index/top.html
+[ info ] www.ec.com/admin/index/top.html [运行时间：0.210904s][吞吐率：4.74req/s] [内存消耗：1,607.53kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Index->top[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\top.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:04:41+08:00 ] 127.0.0.1 GET /admin/index/main.html
+[ info ] www.ec.com/admin/index/main.html [运行时间：0.199078s][吞吐率：5.02req/s] [内存消耗：1,607.59kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Index->main[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:04:41+08:00 ] 127.0.0.1 GET /admin/index/drag.html
+[ info ] www.ec.com/admin/index/drag.html [运行时间：0.204050s][吞吐率：4.90req/s] [内存消耗：1,607.56kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'drag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Index->drag[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\drag.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:04:41+08:00 ] 127.0.0.1 GET /admin/index/menu.html
+[ info ] www.ec.com/admin/index/menu.html [运行时间：0.320817s][吞吐率：3.12req/s] [内存消耗：1,668.80kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Index->menu[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\menu.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:05:33+08:00 ] 127.0.0.1 GET /admin/goods/goods_add.html
+[ info ] www.ec.com/admin/goods/goods_add.html [运行时间：0.266460s][吞吐率：3.75req/s] [内存消耗：2,971.61kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->goods_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\goods\goods_add.html [ array (
+  0 => 'cat',
+  1 => 'brand',
+  2 => 'goodstype',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004534s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cat` [ RunTime:0.045662s ]
+[ sql ] [ SQL ] SELECT * FROM `cat` [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `brand` [ RunTime:0.038028s ]
+[ sql ] [ SQL ] SELECT * FROM `brand` [ RunTime:0.008813s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goodstype` [ RunTime:0.031877s ]
+[ sql ] [ SQL ] SELECT * FROM `goodstype` [ RunTime:0.000685s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:05:33+08:00 ] 127.0.0.1 GET /admin/goods/goods_list.html
+[ info ] www.ec.com/admin/goods/goods_list.html [运行时间：0.147571s][吞吐率：6.78req/s] [内存消耗：2,903.20kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->goods_list[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\goods\goods_list.html [ array (
+  0 => 'goods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004717s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.020905s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` [ RunTime:0.001792s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:05:34+08:00 ] 127.0.0.1 GET /admin/goods/goods_list.html
+[ info ] www.ec.com/admin/goods/goods_list.html [运行时间：0.271380s][吞吐率：3.68req/s] [内存消耗：2,903.20kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->goods_list[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\goods\goods_list.html [ array (
+  0 => 'goods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004796s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.177846s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` [ RunTime:0.001331s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:05:35+08:00 ] 127.0.0.1 GET /admin/goods/product.html?goods_id=13
+[ info ] www.ec.com/admin/goods/product.html?goods_id=13 [运行时间：0.176237s][吞吐率：5.67req/s] [内存消耗：2,986.12kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/goods_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\goods\product.html [ array (
+  0 => 'product',
+  1 => 'goods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003713s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.019897s ]
+[ sql ] [ SQL ] SELECT `goods_name` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT `goods_sn` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_attr` [ RunTime:0.020545s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_attr` WHERE  `goods_id` = 13 [ RunTime:0.001208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `attr` [ RunTime:0.026358s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 5  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 6  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000664s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:06:19+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.062040s][吞吐率：16.12req/s] [内存消耗：1,670.34kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1636',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryFfxHKXrPkKHAMqA7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    1 => 
+    array (
+      0 => '1',
+      1 => '1',
+      2 => '2',
+      3 => '2',
+    ),
+    2 => 
+    array (
+      0 => '1',
+      1 => '2',
+      2 => '2',
+      3 => '1',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:08:45+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.066660s][吞吐率：15.00req/s] [内存消耗：1,670.16kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1636',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryFfxHKXrPkKHAMqA7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    1 => 
+    array (
+      0 => '1',
+      1 => '1',
+      2 => '2',
+      3 => '2',
+    ),
+    2 => 
+    array (
+      0 => '1',
+      1 => '2',
+      2 => '2',
+      3 => '1',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:08:53+08:00 ] 127.0.0.1 GET /admin/goods/product.html?goods_id=13
+[ info ] www.ec.com/admin/goods/product.html?goods_id=13 [运行时间：0.276688s][吞吐率：3.61req/s] [内存消耗：3,130.83kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/goods_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\goods\product.html [ array (
+  0 => 'product',
+  1 => 'goods',
+  2 => 'goods_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004004s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.024037s ]
+[ sql ] [ SQL ] SELECT `goods_name` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.001008s ]
+[ sql ] [ SQL ] SELECT `goods_sn` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_attr` [ RunTime:0.021873s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_attr` WHERE  `goods_id` = 13 [ RunTime:0.001139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `attr` [ RunTime:0.019440s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 5  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 6  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000730s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:09:13+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.059002s][吞吐率：16.95req/s] [内存消耗：1,670.37kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryR7rUB7ehmiCXqS5m',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    1 => 
+    array (
+      0 => '1',
+      1 => '1',
+      2 => '2',
+      3 => '2',
+    ),
+    2 => 
+    array (
+      0 => '1',
+      1 => '2',
+      2 => '1',
+      3 => '2',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:10:48+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.116548s][吞吐率：8.58req/s] [内存消耗：1,703.59kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryR7rUB7ehmiCXqS5m',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    1 => 
+    array (
+      0 => '1',
+      1 => '1',
+      2 => '2',
+      3 => '2',
+    ),
+    2 => 
+    array (
+      0 => '1',
+      1 => '2',
+      2 => '1',
+      3 => '2',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\library\think\Request.php:1133]
+---------------------------------------------------------------
+[ 2018-04-28T08:11:13+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.068704s][吞吐率：14.56req/s] [内存消耗：1,703.65kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryR7rUB7ehmiCXqS5m',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    1 => 
+    array (
+      0 => '1',
+      1 => '1',
+      2 => '2',
+      3 => '2',
+    ),
+    2 => 
+    array (
+      0 => '1',
+      1 => '2',
+      2 => '1',
+      3 => '2',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\library\think\Request.php:1133]
+---------------------------------------------------------------
+[ 2018-04-28T08:11:27+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.071189s][吞吐率：14.05req/s] [内存消耗：1,703.65kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryR7rUB7ehmiCXqS5m',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    1 => 
+    array (
+      0 => '1',
+      1 => '1',
+      2 => '2',
+      3 => '2',
+    ),
+    2 => 
+    array (
+      0 => '1',
+      1 => '2',
+      2 => '1',
+      3 => '2',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\library\think\Request.php:1133]
+---------------------------------------------------------------
+[ 2018-04-28T08:11:37+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.069851s][吞吐率：14.32req/s] [内存消耗：1,703.01kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryR7rUB7ehmiCXqS5m',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    1 => 
+    array (
+      0 => '1',
+      1 => '1',
+      2 => '2',
+      3 => '2',
+    ),
+    2 => 
+    array (
+      0 => '1',
+      1 => '2',
+      2 => '1',
+      3 => '2',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\library\think\Request.php:1133]
+---------------------------------------------------------------
+[ 2018-04-28T08:11:45+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.062943s][吞吐率：15.89req/s] [内存消耗：1,670.70kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryR7rUB7ehmiCXqS5m',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    1 => 
+    array (
+      0 => '1',
+      1 => '1',
+      2 => '2',
+      3 => '2',
+    ),
+    2 => 
+    array (
+      0 => '1',
+      1 => '2',
+      2 => '1',
+      3 => '2',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:12:08+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.065653s][吞吐率：15.23req/s] [内存消耗：1,671.16kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryR7rUB7ehmiCXqS5m',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    1 => 
+    array (
+      0 => '1',
+      1 => '1',
+      2 => '2',
+      3 => '2',
+    ),
+    2 => 
+    array (
+      0 => '1',
+      1 => '2',
+      2 => '1',
+      3 => '2',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:13:35+08:00 ] 127.0.0.1 GET /admin/goods/product.html?goods_id=13
+[ info ] www.ec.com/admin/goods/product.html?goods_id=13 [运行时间：0.188513s][吞吐率：5.30req/s] [内存消耗：2,987.32kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/goods_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\goods\product.html [ array (
+  0 => 'product',
+  1 => 'goods',
+  2 => 'goods_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003644s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.021401s ]
+[ sql ] [ SQL ] SELECT `goods_name` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT `goods_sn` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_attr` [ RunTime:0.022864s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_attr` WHERE  `goods_id` = 13 [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `attr` [ RunTime:0.019995s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 5  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 6  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000692s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:16:05+08:00 ] 127.0.0.1 GET /admin/goods/product.html?goods_id=13
+[ info ] www.ec.com/admin/goods/product.html?goods_id=13 [运行时间：0.329528s][吞吐率：3.03req/s] [内存消耗：3,131.77kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/goods_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\goods\product.html [ array (
+  0 => 'product',
+  1 => 'goods',
+  2 => 'goods_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003885s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.165257s ]
+[ sql ] [ SQL ] SELECT `goods_name` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT `goods_sn` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_attr` [ RunTime:0.020154s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_attr` WHERE  `goods_id` = 13 [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `attr` [ RunTime:0.020050s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 5  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 6  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.000851s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:16:26+08:00 ] 127.0.0.1 GET /admin/goods/product.html?goods_id=13
+[ info ] www.ec.com/admin/goods/product.html?goods_id=13 [运行时间：0.301971s][吞吐率：3.31req/s] [内存消耗：3,131.73kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/goods_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\goods\product.html [ array (
+  0 => 'product',
+  1 => 'goods',
+  2 => 'goods_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004401s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.020957s ]
+[ sql ] [ SQL ] SELECT `goods_name` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT `goods_sn` FROM `goods` WHERE  `goods_id` = 13 LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_attr` [ RunTime:0.019448s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_attr` WHERE  `goods_id` = 13 [ RunTime:0.001266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `attr` [ RunTime:0.130409s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 3  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.002343s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.001671s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 4  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.001800s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 5  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.001717s ]
+[ sql ] [ SQL ] SELECT `attr_name` FROM `attr` WHERE  `attr_id` = 6  AND `attr_type` = 2 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:16:59+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.058795s][吞吐率：17.01req/s] [内存消耗：1,671.43kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPndTQpFxB98gBrLf',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    3 => 
+    array (
+      0 => '6',
+      1 => '6',
+      2 => '7',
+      3 => '7',
+    ),
+    4 => 
+    array (
+      0 => '8',
+      1 => '9',
+      2 => '8',
+      3 => '9',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:18:27+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.083782s][吞吐率：11.94req/s] [内存消耗：1,672.06kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPndTQpFxB98gBrLf',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    3 => 
+    array (
+      0 => '6',
+      1 => '6',
+      2 => '7',
+      3 => '7',
+    ),
+    4 => 
+    array (
+      0 => '8',
+      1 => '9',
+      2 => '8',
+      3 => '9',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:19:29+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.065647s][吞吐率：15.23req/s] [内存消耗：1,672.06kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPndTQpFxB98gBrLf',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    3 => 
+    array (
+      0 => '6',
+      1 => '6',
+      2 => '7',
+      3 => '7',
+    ),
+    4 => 
+    array (
+      0 => '8',
+      1 => '9',
+      2 => '8',
+      3 => '9',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:20:36+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.074741s][吞吐率：13.38req/s] [内存消耗：1,672.28kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPndTQpFxB98gBrLf',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    3 => 
+    array (
+      0 => '6',
+      1 => '6',
+      2 => '7',
+      3 => '7',
+    ),
+    4 => 
+    array (
+      0 => '8',
+      1 => '9',
+      2 => '8',
+      3 => '9',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-28T08:46:12+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.357269s][吞吐率：2.80req/s] [内存消耗：1,395.97kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPndTQpFxB98gBrLf',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    3 => 
+    array (
+      0 => '6',
+      1 => '6',
+      2 => '7',
+      3 => '7',
+    ),
+    4 => 
+    array (
+      0 => '8',
+      1 => '9',
+      2 => '8',
+      3 => '9',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php:152]
+---------------------------------------------------------------
+[ 2018-04-28T08:46:18+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.137533s][吞吐率：7.27req/s] [内存消耗：2,778.77kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPndTQpFxB98gBrLf',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    3 => 
+    array (
+      0 => '6',
+      1 => '6',
+      2 => '7',
+      3 => '7',
+    ),
+    4 => 
+    array (
+      0 => '8',
+      1 => '9',
+      2 => '8',
+      3 => '9',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004424s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.022234s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `goods_sn` = 'EC201804280846188764' LIMIT 1 [ RunTime:0.001584s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `goods_sn` = 'EC201804280846188497' LIMIT 1 [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `goods_sn` = 'EC201804280846189099' LIMIT 1 [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `goods_sn` = 'EC201804280846185987' LIMIT 1 [ RunTime:0.001148s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:48:00+08:00 ] 127.0.0.1 POST /admin/goods/product_add.html
+[ info ] www.ec.com/admin/goods/product_add.html [运行时间：0.224807s][吞吐率：4.45req/s] [内存消耗：2,846.41kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'product_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1733',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPndTQpFxB98gBrLf',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product.html?goods_id=13',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+  'attr' => 
+  array (
+    3 => 
+    array (
+      0 => '6',
+      1 => '6',
+      2 => '7',
+      3 => '7',
+    ),
+    4 => 
+    array (
+      0 => '8',
+      1 => '9',
+      2 => '8',
+      3 => '9',
+    ),
+  ),
+  'product_sn' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+    3 => '',
+  ),
+  'product_number' => 
+  array (
+    0 => '10',
+    1 => '10',
+    2 => '10',
+    3 => '10',
+  ),
+  'goods_id' => '13',
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->product_add[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004359s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.021536s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `goods_sn` = 'EC201804280847591310' LIMIT 1 [ RunTime:0.001157s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `goods_sn` = 'EC201804280847592049' LIMIT 1 [ RunTime:0.001427s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `goods_sn` = 'EC201804280847592093' LIMIT 1 [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `goods_sn` = 'EC201804280847597898' LIMIT 1 [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.095716s ]
+[ sql ] [ SQL ] INSERT INTO `product` (`goods_id` , `product_sn` , `product_number` , `product_value`) VALUES ( '13','EC201804280847591310','10','6,8' ) , ( '13','EC201804280847592049','10','6,9' ) , ( '13','EC201804280847592093','10','7,8' ) , ( '13','EC201804280847597898','10','7,9' ) [ RunTime:0.001189s ]
+---------------------------------------------------------------
+[ 2018-04-28T08:48:02+08:00 ] 127.0.0.1 GET /admin/goods/goods_list.html
+[ info ] www.ec.com/admin/goods/goods_list.html [运行时间：0.114237s][吞吐率：8.75req/s] [内存消耗：2,907.21kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/goods/product_add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3hk2fgsc8gohdqra12lkr830o4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Goods->goods_list[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Goods.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\goods\goods_list.html [ array (
+  0 => 'goods',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005921s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.018741s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` [ RunTime:0.001011s ]

@@ -1,0 +1,259 @@
+---------------------------------------------------------------
+[ 2018-05-03T15:45:08+08:00 ] 127.0.0.1 GET /index/login/regist.html
+[ info ] www.ec.com/index/login/regist.html [运行时间：0.419132s][吞吐率：2.39req/s] [内存消耗：1,117.62kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'regist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ec.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->regist[ D:\phpStudy\WWW\three_shop\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\three_shop\public/../application/index\view\login\regist.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-03T15:46:02+08:00 ] 127.0.0.1 GET /index/login/login.html
+[ info ] www.ec.com/index/login/login.html [运行时间：0.158359s][吞吐率：6.31req/s] [内存消耗：1,238.20kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ec.com/index/login/regist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ec.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\phpStudy\WWW\three_shop\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\three_shop\public/../application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-03T15:46:05+08:00 ] 127.0.0.1 GET /index/login/regist.html
+[ info ] www.ec.com/index/login/regist.html [运行时间：0.035741s][吞吐率：27.98req/s] [内存消耗：1,117.68kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'regist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ec.com/index/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ec.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->regist[ D:\phpStudy\WWW\three_shop\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\three_shop\public/../application/index\view\login\regist.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-03T16:25:00+08:00 ] 127.0.0.1 GET /index/login/login.html
+[ info ] www.ec.com/index/login/login.html [运行时间：0.048601s][吞吐率：20.58req/s] [内存消耗：1,112.95kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ec.com/index/login/regist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ec.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\phpStudy\WWW\three_shop\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\three_shop\public/../application/index\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-03T16:25:07+08:00 ] 127.0.0.1 POST /index/login/login.html
+[ info ] www.ec.com/index/login/login.html [运行时间：0.569810s][吞吐率：1.75req/s] [内存消耗：1,658.77kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ec.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.ec.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '31',
+  'connection' => 'close',
+  'host' => 'www.ec.com',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'admin',
+  'user_pwd' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\phpStudy\WWW\three_shop\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.145054s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.251001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_name` = 'admin'  AND `user_pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.018810s ]
+---------------------------------------------------------------
+[ 2018-05-03T16:25:11+08:00 ] 127.0.0.1 POST /index/login/login.html
+[ info ] www.ec.com/index/login/login.html [运行时间：0.202389s][吞吐率：4.94req/s] [内存消耗：1,702.48kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ec.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.ec.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '33',
+  'connection' => 'close',
+  'host' => 'www.ec.com',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'admin12',
+  'user_pwd' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\phpStudy\WWW\three_shop\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006207s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.058417s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `user_name` = 'admin12'  AND `user_pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.001822s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `last_login`=1525335911  WHERE  `user_id` = 2 [ RunTime:0.024760s ]
+---------------------------------------------------------------
+[ 2018-05-03T16:25:11+08:00 ] 127.0.0.1 GET /index/index/index.html
+[ info ] www.ec.com/index/index/index.html [运行时间：0.191545s][吞吐率：5.22req/s] [内存消耗：1,364.41kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehc1v36vu9pn8sclhqje97e5o6; user=think%3A%7B%22user_id%22%3A%222%22%2C%22user_name%22%3A%22admin12%22%2C%22user_pwd%22%3A%22e10adc3949ba59abbe56e057f20f883e%22%2C%22email%22%3A%22253035640%2540qq.com%22%2C%22reg_time%22%3A%221524799072%22%2C%22last_login%22%3A%221524799072%22%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ec.com/index/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ec.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\three_shop\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\three_shop\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-03T16:25:12+08:00 ] 127.0.0.1 GET /static/index/images/line.gif
+[ info ] www.ec.com/static/index/images/line.gif [运行时间：0.112791s][吞吐率：8.87req/s] [内存消耗：813.38kb] [文件加载：28]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ehc1v36vu9pn8sclhqje97e5o6; user=think%3A%7B%22user_id%22%3A%222%22%2C%22user_name%22%3A%22admin12%22%2C%22user_pwd%22%3A%22e10adc3949ba59abbe56e057f20f883e%22%2C%22email%22%3A%22253035640%2540qq.com%22%2C%22reg_time%22%3A%221524799072%22%2C%22last_login%22%3A%221524799072%22%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.ec.com/static/index/css/style.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.ec.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

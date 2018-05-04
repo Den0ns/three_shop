@@ -1,0 +1,1817 @@
+---------------------------------------------------------------
+[ 2018-04-21T08:59:31+08:00 ] 127.0.0.1 GET /
+[ info ] www.ec.com/ [运行时间：0.815308s][吞吐率：1.23req/s] [内存消耗：1,658.19kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T08:59:31+08:00 ] 127.0.0.1 GET /
+[ info ] www.ec.com/ [运行时间：0.058413s][吞吐率：17.12req/s] [内存消耗：1,658.23kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T08:59:38+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] www.ec.com/admin/login/login.html [运行时间：0.387454s][吞吐率：2.58req/s] [内存消耗：2,775.02kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://www.ec.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'email' => '2423503330@qq.com',
+  'Password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035157s ] mysql:host=127.0.0.1;dbname=shop;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shop_admin` [ RunTime:0.049849s ]
+[ sql ] [ SQL ] SELECT * FROM `shop_admin` WHERE  `admin_email` = '2423503330@qq.com'  AND `admin_pwd` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.001253s ]
+---------------------------------------------------------------
+[ 2018-04-21T08:59:40+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.ec.com/admin/index/index.html [运行时间：0.171833s][吞吐率：5.82req/s] [内存消耗：1,632.33kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T08:59:41+08:00 ] 127.0.0.1 GET /admin/index/shop_index.html
+[ info ] www.ec.com/admin/index/shop_index.html [运行时间：0.120016s][吞吐率：8.33req/s] [内存消耗：1,553.50kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'shop_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->shop_index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\shop_index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T08:59:41+08:00 ] 127.0.0.1 GET /admin/index/js/dist/chart/bar.js
+[ info ] www.ec.com/admin/index/js/dist/chart/bar.js [运行时间：0.199822s][吞吐率：5.00req/s] [内存消耗：1,348.48kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.ec.com/admin/index/shop_index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+  'dist' => 'chart',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T08:59:41+08:00 ] 127.0.0.1 GET /admin/index/js/dist/chart/line.js
+[ info ] www.ec.com/admin/index/js/dist/chart/line.js [运行时间：0.193694s][吞吐率：5.16req/s] [内存消耗：1,348.42kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.ec.com/admin/index/shop_index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+  'dist' => 'chart',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:12+08:00 ] 127.0.0.1 GET /admin/index/Products.html
+[ info ] www.ec.com/admin/index/Products.html [运行时间：0.071893s][吞吐率：13.91req/s] [内存消耗：1,348.57kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'Products',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:12+08:00 ] 127.0.0.1 GET /admin/index/Products.html
+[ info ] www.ec.com/admin/index/Products.html [运行时间：0.073571s][吞吐率：13.59req/s] [内存消耗：1,348.59kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'Products',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:34+08:00 ] 127.0.0.1 GET /admin/index/Products.html
+[ info ] www.ec.com/admin/index/Products.html [运行时间：0.056290s][吞吐率：17.77req/s] [内存消耗：1,348.57kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'Products',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:35+08:00 ] 127.0.0.1 GET /admin/index/Products.html
+[ info ] www.ec.com/admin/index/Products.html [运行时间：0.051514s][吞吐率：19.41req/s] [内存消耗：1,348.57kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'Products',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:36+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.ec.com/admin/index/index.html [运行时间：0.102814s][吞吐率：9.73req/s] [内存消耗：1,804.91kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:36+08:00 ] 127.0.0.1 GET /admin/index/shop_index.html
+[ info ] www.ec.com/admin/index/shop_index.html [运行时间：0.078626s][吞吐率：12.72req/s] [内存消耗：1,553.50kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'shop_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->shop_index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\shop_index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:37+08:00 ] 127.0.0.1 GET /admin/index/js/dist/chart/line.js
+[ info ] www.ec.com/admin/index/js/dist/chart/line.js [运行时间：0.104402s][吞吐率：9.58req/s] [内存消耗：1,348.41kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.ec.com/admin/index/shop_index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+  'dist' => 'chart',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:37+08:00 ] 127.0.0.1 GET /admin/index/js/dist/chart/bar.js
+[ info ] www.ec.com/admin/index/js/dist/chart/bar.js [运行时间：0.107253s][吞吐率：9.32req/s] [内存消耗：1,348.47kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.ec.com/admin/index/shop_index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+  'dist' => 'chart',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:39+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.ec.com/admin/index/index.html [运行时间：0.071910s][吞吐率：13.91req/s] [内存消耗：1,632.59kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:39+08:00 ] 127.0.0.1 GET /admin/index/shop_index.html
+[ info ] www.ec.com/admin/index/shop_index.html [运行时间：0.092550s][吞吐率：10.80req/s] [内存消耗：1,553.50kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'shop_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->shop_index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\shop_index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:39+08:00 ] 127.0.0.1 GET /admin/index/js/dist/chart/line.js
+[ info ] www.ec.com/admin/index/js/dist/chart/line.js [运行时间：0.091378s][吞吐率：10.94req/s] [内存消耗：1,348.38kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.ec.com/admin/index/shop_index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+  'dist' => 'chart',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:39+08:00 ] 127.0.0.1 GET /admin/index/js/dist/chart/bar.js
+[ info ] www.ec.com/admin/index/js/dist/chart/bar.js [运行时间：0.103742s][吞吐率：9.64req/s] [内存消耗：1,348.47kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.ec.com/admin/index/shop_index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+  'dist' => 'chart',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:41+08:00 ] 127.0.0.1 GET /admin/products/products_list.html
+[ info ] www.ec.com/admin/products/products_list.html [运行时间：0.087659s][吞吐率：11.41req/s] [内存消耗：1,770.09kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'products_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Products->products_list[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Products.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\products\products_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:41+08:00 ] 127.0.0.1 GET /admin/products/products_list.html
+[ info ] www.ec.com/admin/products/products_list.html [运行时间：0.081565s][吞吐率：12.26req/s] [内存消耗：1,605.22kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'products_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Products->products_list[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Products.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\products\products_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:41+08:00 ] 127.0.0.1 GET /admin/products/ad.jpg
+[ info ] www.ec.com/admin/products/ad.jpg [运行时间：0.081106s][吞吐率：12.33req/s] [内存消耗：1,626.93kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'ad.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/products/products_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:04:41+08:00 ] 127.0.0.1 GET /admin/products/p_55.jpg
+[ info ] www.ec.com/admin/products/p_55.jpg [运行时间：0.081547s][吞吐率：12.26req/s] [内存消耗：1,626.95kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'p_55.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/products/products_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:02+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.ec.com/admin/index/index.html [运行时间：0.057103s][吞吐率：17.51req/s] [内存消耗：1,632.59kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:03+08:00 ] 127.0.0.1 GET /admin/index/shop_index.html
+[ info ] www.ec.com/admin/index/shop_index.html [运行时间：0.084205s][吞吐率：11.88req/s] [内存消耗：1,553.50kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'shop_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->shop_index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\shop_index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:03+08:00 ] 127.0.0.1 GET /admin/index/js/dist/chart/line.js
+[ info ] www.ec.com/admin/index/js/dist/chart/line.js [运行时间：0.072089s][吞吐率：13.87req/s] [内存消耗：1,348.38kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.ec.com/admin/index/shop_index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+  'dist' => 'chart',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:03+08:00 ] 127.0.0.1 GET /admin/index/js/dist/chart/bar.js
+[ info ] www.ec.com/admin/index/js/dist/chart/bar.js [运行时间：0.071639s][吞吐率：13.96req/s] [内存消耗：1,348.38kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.ec.com/admin/index/shop_index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+  'dist' => 'chart',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:05+08:00 ] 127.0.0.1 GET /admin/category/manage.html
+[ info ] www.ec.com/admin/category/manage.html [运行时间：0.082533s][吞吐率：12.12req/s] [内存消耗：1,750.56kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\category\manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:05+08:00 ] 127.0.0.1 GET /admin/category/manage.html
+[ info ] www.ec.com/admin/category/manage.html [运行时间：0.097851s][吞吐率：10.22req/s] [内存消耗：1,750.56kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\category\manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:05+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.htmlBrand_Manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.htmlBrand_Manage.html [运行时间：0.061688s][吞吐率：16.21req/s] [内存消耗：1,627.55kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage.htmlBrand_Manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:05+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.htmlBrand_Manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.htmlBrand_Manage.html [运行时间：0.063170s][吞吐率：15.83req/s] [内存消耗：1,627.55kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage.htmlBrand_Manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:19+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.htmlBrand_Manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.htmlBrand_Manage.html [运行时间：0.070259s][吞吐率：14.23req/s] [内存消耗：1,627.55kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage.htmlBrand_Manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:20+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.htmlBrand_Manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.htmlBrand_Manage.html [运行时间：0.060820s][吞吐率：16.44req/s] [内存消耗：1,627.55kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage.htmlBrand_Manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:20+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.htmlBrand_Manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.htmlBrand_Manage.html [运行时间：0.060346s][吞吐率：16.57req/s] [内存消耗：1,627.55kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage.htmlBrand_Manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:21+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.ec.com/admin/index/index.html [运行时间：0.074718s][吞吐率：13.38req/s] [内存消耗：1,804.95kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:22+08:00 ] 127.0.0.1 GET /admin/index/shop_index.html
+[ info ] www.ec.com/admin/index/shop_index.html [运行时间：0.074742s][吞吐率：13.38req/s] [内存消耗：1,553.50kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'shop_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->shop_index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\shop_index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:22+08:00 ] 127.0.0.1 GET /admin/index/js/dist/chart/line.js
+[ info ] www.ec.com/admin/index/js/dist/chart/line.js [运行时间：0.079998s][吞吐率：12.50req/s] [内存消耗：1,348.38kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.ec.com/admin/index/shop_index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+  'dist' => 'chart',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:24+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.html [运行时间：0.073847s][吞吐率：13.54req/s] [内存消耗：1,770.04kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Brand->brand_manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Brand.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\brand\brand_manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:24+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.html [运行时间：0.065792s][吞吐率：15.20req/s] [内存消耗：1,605.13kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Brand->brand_manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Brand.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\brand\brand_manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:24+08:00 ] 127.0.0.1 GET /admin/products/ad.jpg
+[ info ] www.ec.com/admin/products/ad.jpg [运行时间：0.080612s][吞吐率：12.41req/s] [内存消耗：1,626.97kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'ad.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/brand/brand_manage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:05:24+08:00 ] 127.0.0.1 GET /admin/products/p_55.jpg
+[ info ] www.ec.com/admin/products/p_55.jpg [运行时间：0.089209s][吞吐率：11.21req/s] [内存消耗：1,626.88kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'p_55.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/brand/brand_manage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:07:13+08:00 ] 127.0.0.1 GET /admin/index/admin_Competence.html
+[ info ] www.ec.com/admin/index/admin_Competence.html [运行时间：0.060340s][吞吐率：16.57req/s] [内存消耗：1,348.65kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'admin_Competence',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:07:13+08:00 ] 127.0.0.1 GET /admin/index/admin_Competence.html
+[ info ] www.ec.com/admin/index/admin_Competence.html [运行时间：0.066384s][吞吐率：15.06req/s] [内存消耗：1,348.65kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'admin_Competence',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:13:42+08:00 ] 127.0.0.1 GET /admin/products/products_list.html
+[ info ] www.ec.com/admin/products/products_list.html [运行时间：0.080781s][吞吐率：12.38req/s] [内存消耗：1,770.16kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'products_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Products->products_list[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Products.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\products\products_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:13:42+08:00 ] 127.0.0.1 GET /admin/products/products_list.html
+[ info ] www.ec.com/admin/products/products_list.html [运行时间：0.073226s][吞吐率：13.66req/s] [内存消耗：1,770.16kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'products_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Products->products_list[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Products.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\products\products_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:13:42+08:00 ] 127.0.0.1 GET /admin/products/ad.jpg
+[ info ] www.ec.com/admin/products/ad.jpg [运行时间：0.084317s][吞吐率：11.86req/s] [内存消耗：1,626.93kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'ad.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/products/products_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:13:42+08:00 ] 127.0.0.1 GET /admin/products/p_55.jpg
+[ info ] www.ec.com/admin/products/p_55.jpg [运行时间：0.083575s][吞吐率：11.97req/s] [内存消耗：1,626.95kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'p_55.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/products/products_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:13:43+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.html [运行时间：0.068421s][吞吐率：14.62req/s] [内存消耗：1,605.13kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Brand->brand_manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Brand.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\brand\brand_manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:13:43+08:00 ] 127.0.0.1 GET /admin/products/ad.jpg
+[ info ] www.ec.com/admin/products/ad.jpg [运行时间：0.086722s][吞吐率：11.53req/s] [内存消耗：1,626.97kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'ad.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/brand/brand_manage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:13:43+08:00 ] 127.0.0.1 GET /admin/products/p_55.jpg
+[ info ] www.ec.com/admin/products/p_55.jpg [运行时间：0.087387s][吞吐率：11.44req/s] [内存消耗：1,626.88kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'p_55.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/brand/brand_manage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:13:43+08:00 ] 127.0.0.1 GET /admin/category/manage.html
+[ info ] www.ec.com/admin/category/manage.html [运行时间：0.070261s][吞吐率：14.23req/s] [内存消耗：1,605.08kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\category\manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T09:13:43+08:00 ] 127.0.0.1 GET /admin/category/manage.html
+[ info ] www.ec.com/admin/category/manage.html [运行时间：0.066327s][吞吐率：15.08req/s] [内存消耗：1,605.08kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\category\manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:02+08:00 ] 127.0.0.1 GET /admin/products/products_list.html
+[ info ] www.ec.com/admin/products/products_list.html [运行时间：0.084176s][吞吐率：11.88req/s] [内存消耗：1,605.22kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'products_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Products->products_list[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Products.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\products\products_list.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:02+08:00 ] 127.0.0.1 GET /admin/products/ad.jpg
+[ info ] www.ec.com/admin/products/ad.jpg [运行时间：0.094792s][吞吐率：10.55req/s] [内存消耗：1,626.93kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'ad.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/products/products_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:02+08:00 ] 127.0.0.1 GET /admin/products/p_55.jpg
+[ info ] www.ec.com/admin/products/p_55.jpg [运行时间：0.109483s][吞吐率：9.13req/s] [内存消耗：1,626.95kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'p_55.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/products/products_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:04+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.html [运行时间：0.103756s][吞吐率：9.64req/s] [内存消耗：1,605.13kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Brand->brand_manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Brand.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\brand\brand_manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:04+08:00 ] 127.0.0.1 GET /admin/brand/brand_manage.html
+[ info ] www.ec.com/admin/brand/brand_manage.html [运行时间：0.162178s][吞吐率：6.17req/s] [内存消耗：1,605.13kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brand_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Brand->brand_manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Brand.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\brand\brand_manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:04+08:00 ] 127.0.0.1 GET /admin/products/ad.jpg
+[ info ] www.ec.com/admin/products/ad.jpg [运行时间：0.106978s][吞吐率：9.35req/s] [内存消耗：1,626.97kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'ad.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/brand/brand_manage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:04+08:00 ] 127.0.0.1 GET /admin/products/p_55.jpg
+[ info ] www.ec.com/admin/products/p_55.jpg [运行时间：0.138338s][吞吐率：7.23req/s] [内存消耗：1,626.88kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'products',
+    2 => 'p_55.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/brand/brand_manage.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:05+08:00 ] 127.0.0.1 GET /admin/category/manage.html
+[ info ] www.ec.com/admin/category/manage.html [运行时间：0.071686s][吞吐率：13.95req/s] [内存消耗：1,605.08kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\category\manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:05+08:00 ] 127.0.0.1 GET /admin/category/manage.html
+[ info ] www.ec.com/admin/category/manage.html [运行时间：0.092237s][吞吐率：10.84req/s] [内存消耗：1,605.08kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Category->manage[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Category.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\category\manage.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-21T10:40:38+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] www.ec.com/admin/index/index.html [运行时间：0.068428s][吞吐率：14.61req/s] [内存消耗：1,632.36kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\PHPNO.13\shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=ijq44ceqlt6toj7lis9frorq27',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\PHPNO.13\shop\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\PHPNO.13\shop\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File

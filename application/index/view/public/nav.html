@@ -1,0 +1,20 @@
+<span class="fr">
+         <?php if(!empty(session('user'))) { ?>
+        	<span class="fl">你好，{$Think.session.user.user_name}</a>&nbsp; 
+            <a href="{:url('Login/login_out')}" style="color:#ff4e00;">退出</a>&nbsp;|&nbsp;
+            <a href="{:url('Member/member')}">我的订单</a>&nbsp;</span>
+        <?php }else{ ?>
+            <span class="fl">你好，请<a href="{:url('Login/login')}">登录</a>&nbsp; 
+            <a href="{:url('Login/regist')}" style="color:#ff4e00;">免费注册</a></span>
+        <?php } ?>
+            <span class="fl">|&nbsp;关注我们：</span>
+            <span class="s_sh"><a href="#" class="sh1">新浪</a><a href="#" class="sh2">微信</a></span>
+            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="__STATIC__/index/images/s_tel.png" align="absmiddle" /></a></span>
+            </span>
+
+
+       <!--  <?php if (empty($user_name)) { ?>
+                <span class="fl">你好，请<a href="{:url('Login/login')}">登录</a>&nbsp; <a href="{:url('Login/regist')}" style="color:#ff4e00;">免费注册</a>&nbsp;|&nbsp;<a href="{:url('member/order')}">我的订单</a>&nbsp;|</span>
+            <?php }else{ ?>
+                <span class="fl"><span style="color: red"><?php echo $user_name; ?></span>&nbsp;|&nbsp;<a href="{:url('login/out')}">退出</a>&nbsp;|&nbsp;<a href="{:url('member/order')}">我的订单</a>&nbsp;|</span>
+            <?php } ?> -->

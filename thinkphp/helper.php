@@ -587,3 +587,18 @@ if (!function_exists('collection')) {
         }
     }
 }
+
+// if (!function_exists('captcha_img')) {
+//     /**
+//      * 数组转换为数据集对象
+//      * @param array $resultSet 数据集数组
+//      * @return \think\model\Collection|\think\Collection
+//      */
+//     function captcha_img($id = "")
+//     {
+//         $js_src = "this.src='".captcha_src()."'";
+//         return '<img src="' . captcha_src($id) . '" alt="点击更新验证码"
+//          onclick="'.$js_src.'" />';
+//         //return '![](' . captcha_src($id) . ')';
+//     }
+// }

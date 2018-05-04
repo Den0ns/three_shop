@@ -1,0 +1,95 @@
+---------------------------------------------------------------
+[ 2018-04-26T21:18:12+08:00 ] 127.0.0.1 GET /index/login/regist.html?user_name=&user_pwd=&user_repwd=&email=
+[ info ] www.ec.com/index/login/regist.html?user_name=&user_pwd=&user_repwd=&email= [运行时间：0.118397s][吞吐率：8.45req/s] [内存消耗：1,534.02kb] [文件加载：37]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'regist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/index/login/regist.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => '',
+  'user_pwd' => '',
+  'user_repwd' => '',
+  'email' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->regist[ D:\phpStudy\WWW\three_shop\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\three_shop\public/../application/index\view\login\regist.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-26T21:18:16+08:00 ] 127.0.0.1 GET /index/login/regist.html
+[ info ] www.ec.com/index/login/regist.html [运行时间：0.044700s][吞吐率：22.37req/s] [内存消耗：1,375.01kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'regist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->regist[ D:\phpStudy\WWW\three_shop\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\three_shop\public/../application/index\view\login\regist.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-26T21:18:20+08:00 ] 127.0.0.1 GET /index/login/regist.html?user_name=&user_pwd=&user_repwd=&email=
+[ info ] www.ec.com/index/login/regist.html?user_name=&user_pwd=&user_repwd=&email= [运行时间：0.044110s][吞吐率：22.67req/s] [内存消耗：1,376.16kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpStudy\WWW\three_shop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'regist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ec.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.ec.com/index/login/regist.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => '',
+  'user_pwd' => '',
+  'user_repwd' => '',
+  'email' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->regist[ D:\phpStudy\WWW\three_shop\application\index\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\three_shop\public/../application/index\view\login\regist.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
