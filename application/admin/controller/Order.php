@@ -1,8 +1,7 @@
 <?php
 namespace app\admin\Controller;
-use think\Controller;
 use think\Request;   
-use app\admin\Common;
+use app\admin\Controller\Common;
 
 class Order extends Common
 {	

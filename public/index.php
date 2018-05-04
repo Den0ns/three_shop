@@ -8,9 +8,9 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
-header("content-type:text/html;charset=utf-8");
+session_start();
 // [ 应用入口文件 ]
-
+header("content-type:text/html;charset=utf8");
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/../application/');
 // 加载框架引导文件

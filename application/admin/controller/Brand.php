@@ -1,10 +1,9 @@
 <?php
 namespace app\admin\Controller;
-use think\Controller;
 use think\Request;
 use think\Paginator;
 use think\Db;
-use app\admin\Common;
+use app\admin\Controller\Common;
 use app\admin\model\Brand as Brand_Model;
 
 class Brand extends Common

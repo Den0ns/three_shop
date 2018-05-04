@@ -9,7 +9,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="__STATIC__/admin/styles/general.css" rel="stylesheet" type="text/css" />
 <link href="__STATIC__/admin/styles/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="__STATIC__/admin/js/transport.js"></script><script type="text/javascript" src="__STATIC__/admin/js/common.js"></script><style>
+<script type="text/javascript" src="__STATIC__/admin/js/transport.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/js/common.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/js/jquery-1.8.2.min.js"></script>
+
+<style>
+
   .panel-icloud .panel-right iframe {
     height: 300px;
     margin-top: 15px;
@@ -18,33 +23,7 @@
     top: 3%;
   }
 </style>
-<script language="JavaScript">
-<!--
-// 这里把JS用到的所有语言都赋值到这里
-var process_request = "正在处理您的请求...";
-var todolist_caption = "记事本";
-var todolist_autosave = "自动保存";
-var todolist_save = "保存";
-var todolist_clear = "清除";
-var todolist_confirm_save = "是否将更改保存到记事本？";
-var todolist_confirm_clear = "是否清空内容？";
-var user_name_empty = "管理员用户名不能为空!";
-var password_invaild = "密码必须同时包含字母及数字且长度不能小于6!";
-var email_empty = "Email地址不能为空!";
-var email_error = "Email地址格式不正确!";
-var password_error = "两次输入的密码不一致!";
-var captcha_empty = "您没有输入验证码!";
-//-->
-/*关闭按钮*/
-  function btnCancel(item){
-    var par  = item.offsetParent;
-    var mask  = document.getElementById('Mask')||null;
-    var cloudFrame = document.getElementById('cloudFrame')||null;
-    par.style.display = 'none';
-    if(mask){mask.style.display = 'none';}
-    if(cloudFrame){cloudFrame.src='';}
-  }
-</script>
+
 </head>
 <body>
 
@@ -54,51 +33,57 @@ var captcha_empty = "您没有输入验证码!";
 <span class="action-span1"><a href="index.php?act=main">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1"> &nbsp;&nbsp;&nbsp;&nbsp; 权限列表 </span>
 <div style="clear:both"></div>
 </h1><script type="text/javascript" src="__STATIC__/admin/js/utils.js"></script><script type="text/javascript" src="__STATIC__/admin/js/listtable.js"></script>
+
 <div class="list-div" id="listDiv">
 
 <table cellspacing='1' cellpadding='3' id='list-table'>
   <tr>
+  <!-- <th></th> -->
     <th>权限名</th>
     <th>权限所在控制器</th>
     <th>权限所在方法</th>
     <th>权限是否显示</th>
     <th>操作</th>
   </tr>
-  <tr align="center">
-    <td>商品管理</td>
-    <td>Goods</td>
-    <td></td>
-    <td>显示</td>
+  {volist name="node" id="v"}
+  <tr align="center" nodeid="{$v.node_id}" nodepid="{$v.node_pid}">
+    <!-- <td><span class="show">[ + ]</span></td> -->
+    <td>{$v.node_name}</td>
+    <td>{$v.node_controller}</td>
+    <td>{$v.node_action}</td>
+    <td>
+    {eq name="v['node_status']" value="1"}
+    显示
+    {else/}
+    不显示
+    {/eq}
+    </td>
+    
     <td align="center" style="background-color: rgb(255, 255, 255);">
-      <a href="../goods.php?id=31" target="_blank" title="查看"><img src="__STATIC__/admin/images/icon_view.gif" width="16" height="16" border="0"></a>
-      <a href="goods.php?act=edit&amp;goods_id=31&amp;extension_code=" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" width="16" height="16" border="0"></a>
-      <a href="goods.php?act=copy&amp;goods_id=31&amp;extension_code=" title="复制"><img src="__STATIC__/admin/images/icon_copy.gif" width="16" height="16" border="0"></a>
       <a href="javascript:;" onclick="listTable.remove(31, '您确实要把该商品放入回收站吗？')" title="回收站"><img src="__STATIC__/admin/images/icon_trash.gif" width="16" height="16" border="0"></a>
       <img src="__STATIC__/admin/images/empty.gif" width="16" height="16" border="0">          </td>
   </tr>
-  <tr align="center">
-    <td>商品列表</td>
-    <td>Goods</td>
-    <td>goods_list</td>
-    <td>显示</td>
-    <td align="center" style="background-color: rgb(255, 255, 255);">
-      <a href="../goods.php?id=31" target="_blank" title="查看"><img src="__STATIC__/admin/images/icon_view.gif" width="16" height="16" border="0"></a>
-      <a href="goods.php?act=edit&amp;goods_id=31&amp;extension_code=" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" width="16" height="16" border="0"></a>
-      <a href="goods.php?act=copy&amp;goods_id=31&amp;extension_code=" title="复制"><img src="__STATIC__/admin/images/icon_copy.gif" width="16" height="16" border="0"></a>
-      <a href="javascript:;" onclick="listTable.remove(31, '您确实要把该商品放入回收站吗？')" title="回收站"><img src="__STATIC__/admin/images/icon_trash.gif" width="16" height="16" border="0"></a>
-      <img src="__STATIC__/admin/images/empty.gif" width="16" height="16" border="0">          </td>
-  </tr>
+  {/volist}
+
   </table>
 
 </div>
 <script type="text/javascript" language="JavaScript">
-  
-  // onload = function()
-  // {
-  //   // 开始检查订单
-  //   startCheckOrder();
-  // }
-  
+
+// $(function(){
+
+//     $("tr[nodepid!='0']").hide().find("td .show").remove();
+//         // $(".show").toggle(function(){
+//         //     $(this).html("<span>[ - ]</span>");
+//         //     var node_id = $(this).parents("tr").attr("nodeid");
+//         //     $("tr[nodepid="+node_id+"]").show();
+//         // },function(){
+//         //     $(this).html("<span>[ + ]</span>");
+//         //     var node_id = $(this).parents("tr").attr("nodeid");
+//         //     $("tr[nodepid="+node_id+"]").hide();
+//         // })
+// })
+
 </script>
 <div id="footer">
 共执行 3 个查询，用时 0.010059 秒，Gzip 已禁用，内存占用 1.051 MB<br />
@@ -132,148 +117,6 @@ var captcha_empty = "您没有输入验证码!";
   </embed>
 </object>
 
-<script language="JavaScript">
-document.onmousemove=function(e)
-{
-  var obj = Utils.srcElement(e);
-  if (typeof(obj.onclick) == 'function' && obj.onclick.toString().indexOf('listTable.edit') != -1)
-  {
-    obj.title = '点击修改内容';
-    obj.style.cssText = 'background: #278296;';
-    obj.onmouseout = function(e)
-    {
-      this.style.cssText = '';
-    }
-  }
-  else if (typeof(obj.href) != 'undefined' && obj.href.indexOf('listTable.sort') != -1)
-  {
-    obj.title = '点击对列表排序';
-  }
-}
-<!--
 
-
-var MyTodolist;
-function showTodoList(adminid)
-{
-  if(!MyTodolist)
-  {
-    var global = $import("../__STATIC__/admin/js/global.js","js");
-    global.onload = global.onreadystatechange= function()
-    {
-      if(this.readyState && this.readyState=="loading")return;
-      var md5 = $import("__STATIC__/admin/js/md5.js","js");
-      md5.onload = md5.onreadystatechange= function()
-      {
-        if(this.readyState && this.readyState=="loading")return;
-        var todolist = $import("__STATIC__/admin/js/todolist.js","js");
-        todolist.onload = todolist.onreadystatechange = function()
-        {
-          if(this.readyState && this.readyState=="loading")return;
-          MyTodolist = new Todolist();
-          MyTodolist.show();
-        }
-      }
-    }
-  }
-  else
-  {
-    if(MyTodolist.visibility)
-    {
-      MyTodolist.hide();
-    }
-    else
-    {
-      MyTodolist.show();
-    }
-  }
-}
-
-if (Browser.isIE)
-{
-  onscroll = function()
-  {
-    //document.getElementById('calculator').style.top = document.body.scrollTop;
-    document.getElementById('popMsg').style.top = (document.body.scrollTop + document.body.clientHeight - document.getElementById('popMsg').offsetHeight) + "px";
-  }
-}
-
-if (document.getElementById("listDiv"))
-{
-  document.getElementById("listDiv").onmouseover = function(e)
-  {
-    obj = Utils.srcElement(e);
-
-    if (obj)
-    {
-      if (obj.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode;
-      else if (obj.parentNode.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode.parentNode;
-      else return;
-
-      for (i = 0; i < row.cells.length; i++)
-      {
-        if (row.cells[i].tagName != "TH") row.cells[i].style.backgroundColor = '#F4FAFB';
-      }
-    }
-
-  }
-
-  document.getElementById("listDiv").onmouseout = function(e)
-  {
-    obj = Utils.srcElement(e);
-
-    if (obj)
-    {
-      if (obj.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode;
-      else if (obj.parentNode.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode.parentNode;
-      else return;
-
-      for (i = 0; i < row.cells.length; i++)
-      {
-          if (row.cells[i].tagName != "TH") row.cells[i].style.backgroundColor = '#FFF';
-      }
-    }
-  }
-
-  document.getElementById("listDiv").onclick = function(e)
-  {
-    var obj = Utils.srcElement(e);
-
-    if (obj.tagName == "INPUT" && obj.type == "checkbox")
-    {
-      if (!document.forms['listForm'])
-      {
-        return;
-      }
-      var nodes = document.forms['listForm'].elements;
-      var checked = false;
-
-      for (i = 0; i < nodes.length; i++)
-      {
-        if (nodes[i].checked)
-        {
-           checked = true;
-           break;
-         }
-      }
-
-      if(document.getElementById("btnSubmit"))
-      {
-        document.getElementById("btnSubmit").disabled = !checked;
-      }
-      for (i = 1; i <= 10; i++)
-      {
-        if (document.getElementById("btnSubmit" + i))
-        {
-          document.getElementById("btnSubmit" + i).disabled = !checked;
-        }
-      }
-    }
-  }
-
-}
-
-//-->
-</script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 <?php
 namespace app\admin\Controller;
-use think\Controller;
 use think\Request;  
 use think\Db;  
 use think\Exception;
@@ -25,7 +24,7 @@ class Goods extends Common
     {
         if(Request()->isGet()){
             $cat_data = Cat::all()->toArray();
-            $cat_data = $this->getflag($cat_data,0,1,'cat_id');
+            $cat_data = getflag($cat_data,0,1,'cat_id');
             $brand    = Brand::all()->toArray();
             $goodstype    = Goodstype::all()->toArray();
             return view('goods_add',['cat'=>$cat_data,'brand'=>$brand,'goodstype'=>$goodstype]);

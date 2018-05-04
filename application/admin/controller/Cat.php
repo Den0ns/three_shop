@@ -11,7 +11,7 @@ class Cat extends Common
     {
         $cat_model = new Cat_Model();
         $cat_data = $cat_model->select_cat();
-        $cat_data = $this->getflag($cat_data,0,1,'cat_id');
+        $cat_data = getflag($cat_data,0,1,'cat_id');
         return view('cat_list',['cat'=>$cat_data]);
     }
     //商品分类添加
@@ -19,7 +19,7 @@ class Cat extends Common
     {
         if(request()->isGet()){
             $cat_data = Cat_Model::select()->toArray();
-            $cat_data = $this->getflag($cat_data,0,1,'cat_id');
+            $cat_data = getflag($cat_data,0,1,'cat_id');
             return view('cat_add',['cat'=>$cat_data]);
         }
         if(request()->isPost()){
@@ -44,7 +44,7 @@ class Cat extends Common
             $cat_model = new Cat_Model();
             $this_cat  = $cat_model->find_cat($cat_id);
             $cat_data = $cat_model->select_cat();
-            $cat_data = $this->getflag($cat_data,0,1,'cat_id');
+            $cat_data = getflag($cat_data,0,1,'cat_id');
             return view('cat_edit',['cat'=>$cat_data,'this_cat'=>$this_cat]);
         }
         if(request()->isPost()){

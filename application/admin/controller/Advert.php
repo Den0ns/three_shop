@@ -3,7 +3,7 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
 use think\Db;
-use app\admin\Common;
+use app\admin\Controller\Common;
 class Advert extends Common
 {   
         //广告添加

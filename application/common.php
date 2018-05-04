@@ -10,3 +10,22 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+
+	function getlog($content=""){
+		$data['log_info'] = $content;
+		$data['log_time'] = time();
+		$data['admin_id'] = session("admin_id");
+		db('admin_log')->insert($data);
+	}
+	function getflag($data,$pid=0,$flag=1,$field)
+	{
+		global $arr;
+		foreach ($data as $key => $value) {
+			if($value['parent_id']==$pid){
+				$value['flag']=$flag;
+				$arr[] = $value;
+				getflag($data,$value[$field],$flag+1,$field);
+			}
+		}
+		return $arr;
+	}

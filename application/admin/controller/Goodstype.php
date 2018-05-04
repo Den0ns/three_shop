@@ -1,9 +1,8 @@
 <?php
 namespace app\admin\Controller;
-use think\Controller;
 use think\Request;  
 use app\admin\model\Attr;
-use app\admin\Common;
+use app\admin\Controller\Common;
 use app\admin\model\Goodstype as Goodstype_model;
 
 class Goodstype extends Common

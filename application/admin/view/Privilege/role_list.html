@@ -19,31 +19,7 @@
   }
 </style>
 <script language="JavaScript">
-<!--
-// 这里把JS用到的所有语言都赋值到这里
-var process_request = "正在处理您的请求...";
-var todolist_caption = "记事本";
-var todolist_autosave = "自动保存";
-var todolist_save = "保存";
-var todolist_clear = "清除";
-var todolist_confirm_save = "是否将更改保存到记事本？";
-var todolist_confirm_clear = "是否清空内容？";
-var user_name_empty = "管理员用户名不能为空!";
-var password_invaild = "密码必须同时包含字母及数字且长度不能小于6!";
-var email_empty = "Email地址不能为空!";
-var email_error = "Email地址格式不正确!";
-var password_error = "两次输入的密码不一致!";
-var captcha_empty = "您没有输入验证码!";
-//-->
-/*关闭按钮*/
-  function btnCancel(item){
-    var par  = item.offsetParent;
-    var mask  = document.getElementById('Mask')||null;
-    var cloudFrame = document.getElementById('cloudFrame')||null;
-    par.style.display = 'none';
-    if(mask){mask.style.display = 'none';}
-    if(cloudFrame){cloudFrame.src='';}
-  }
+
 </script>
 </head>
 <body>
@@ -58,32 +34,51 @@ var captcha_empty = "您没有输入验证码!";
 
 <table cellspacing='1' cellpadding='3' id='list-table'>
   <tr>
+    <th>编号</th>
     <th>角色名</th>
     <th>角色描述</th>
+    <th>是否启用</th>
+    <th>拥有权限</th>
     <th>操作</th>
   </tr>
-  </table>
+  {volist name="role" id="v"}
+      <tr role_id="{$v.role_id}">
+      <td>{$v.role_id}</td>
+      <td>{$v.role_name}</td>
+      <td>{$v.role_info}</td>
+      <td>
+          {if condition="$v['role_status'] eq 0"}
+             <span class="roleStatus" status="0">启用</span>
+          {else if condition="$v['role_status'] eq 1}
+             <span class="roleStatus" status="1">不启用</span>
+          {/if}
+      </td> 
+      <td width="800px;" >{$v.node_name}</td>
+      <td> 
+         <a href="{:url('Privilege/role_node',['role_id'=>$v['role_id']])}" title="分派权限">
+         <img src="__STATIC__/admin/images/icon_priv.gif" border="0" height="16" width="16">
+         </a>&nbsp;&nbsp;       
+         <a href="{:url('Privilege/delete',['role_id'=>$v['role_id']])}" title="移除">
+         <img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16"></a>       
+</td>
+  </tr>
 
+  {/volist}
+  </table>
 </div>
 <script type="text/javascript" language="JavaScript">
-  
-  // onload = function()
-  // {
-  //   // 开始检查订单
-  //   startCheckOrder();
-  // }
-  
+
 </script>
 <div id="footer">
 共执行 3 个查询，用时 0.010059 秒，Gzip 已禁用，内存占用 1.051 MB<br />
 版权所有 &copy; 2005-2018 上海商派软件有限公司，并保留所有权利。</div>
 <!-- 新订单提示信息 -->
-<div id="popMsg">
+<div id="popMsg">   
   <table cellspacing="0" cellpadding="0" width="100%" bgcolor="#cfdef4" border="0">
   <tr>
     <td style="color: #0f2c8c" width="30" height="24"></td>
     <td style="font-weight: normal; color: #1f336b; padding-top: 4px;padding-left: 4px" valign="center" width="100%"> 新订单通知</td>
-    <td style="padding-top: 2px;padding-right:2px" valign="center" align="right" width="19"><span title="关闭" style="cursor: hand;cursor:pointer;color:red;font-size:12px;font-weight:bold;margin-right:4px;" onclick="Message.close()" >×</span><!-- <img title=关闭 style="cursor: hand" onclick=closediv() hspace=3 src="msgclose.jpg"> --></td>
+    <td style="padding-top: 2px;padding-right:2px" valign="center" align="right" width="19"><span title="关闭" style="cursor: hand;cursor:pointer;color:red;font-size:12px;font-weight:bold;margin-right:4px;" onclick="Message.close()" >×</span><!-- <img title=关闭 style="cu    rsor: hand" onclick=closediv() hspace=3 src="msgclose.jpg"> --></td>
   </tr>
   <tr>
     <td style="padding-right: 1px; padding-bottom: 1px" colspan="3" height="70">
