@@ -60,48 +60,59 @@
 <!--遮罩-->
 <div class="mask-black" id="Mask"></div>
 <!--遮罩-->
-	<span class="action-span"><a href="{:url('Advert/advert_list')}">广告列表</a></span>
+	<span class="action-span"><a href="{:url('Payment/payment_list')}">支付列表</a></span>
 
-<span class="action-span1"><a href="index.php?act=main">ECSHOP 管理中心</a> </span><span id="search_id" class="inion-span1"> &nbsp;&nbsp;&nbsp;&nbsp; 添加广告 </span>
+<span class="action-span1"><a href="index.php?act=main">ECSHOP 管理中心</a> </span><span id="search_id" class="inion-span1"> &nbsp;&nbsp;&nbsp;&nbsp; 添加支付 </span>
 <div style="clear:both"></div>
 </h1>
 <!-- <script type="text/javascript" src="__STATIC__/admin/js/calendar.php?lang=zh_cn"></script>
 <link href="__STATIC__/admin/js/calendar/calendar.css" rel="stylesheet" type="text/css" /> -->
 <div class="main-div">
-<form action="{:url('Advert/advert_add')}" method="post" enctype="multipart/form-data">
+<form action="{:url('Payment/payment_add')}" method="post" enctype="multipart/form-data">
   <table width="100%" id="general-table">
     <tr>
       <td  class="label">
         <a href="javascript:showNotice('NameNotic');" title="点击此处查看提示信息">
-        <img src="__STATIC__/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息"></a>广告名称</td>
+        <img src="__STATIC__/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息"></a>支付名称</td>
       <td>
-        <input type="text" name="ad_name" value="" size="35" />
-        <br /><span class="notice-span" style="display:block"  id="NameNotic">广告名称只是作为辨别多个广告条目之用，并不显示在广告中</span>
+        <input type="text" name="pay_name" value="" size="35" />
+        <br /><span class="notice-span" style="display:block"  id="NameNotic">支付名称只是作为辨别多个支付方式之用</span>
       </td>
     </tr>
     <tr>
       <tbody id="0">
     <tr>
-      <td  class="label">广告链接</td>
+      <td  class="label">支付方式描述</td>
       <td>
-        <input type="text" name="ad_link" value="" size="35" />
+        <textarea style="width:300px;height:100px;" name="pay_desc"></textarea>
       </td>
     </tr>
     <tr>
-      <td  class="label">
-        <a href="javascript:showNotice('AdCodeImg');" title="点击此处查看提示信息">
-        <img src="__STATIC__/admin/images/notice.gif" width="16" height="16" border="0" alt="点击此处查看提示信息"></a>上传广告图片</td>
+      <td  class="label">支付排序</td>
       <td>
-        <input type='file' name='ad_img' size='35' />
-        <br /><span class="notice-span" style="display:block"  id="AdCodeImg">上传该广告的图片文件,或者你也可以指定一个远程URL地址为广告的图片</span>
+        <input type="text" name="pay_order"  />    
       </td>
     </tr>
     </tbody>
     <tr>
-      <td  class="label">是否开启</td>
+      <td  class="label">支付是否可用</td>
       <td>
-        <input type="radio" name="ad_status" value="1"  checked="true"  />开启    
-        <input type="radio" name="ad_status" value="0"  />关闭    
+        <input type="radio" name="enabled" value="1"  />开启    
+        <input type="radio" name="enabled" value="0"  />关闭    
+      </td>
+    </tr>
+    <tr>
+      <td  class="label">支付是否货到付款</td>
+      <td>
+        <input type="radio" name="is_cod" value="1"  />开启    
+        <input type="radio" name="is_cod" value="0"  />关闭    
+      </td>
+    </tr>
+        <tr>
+      <td  class="label">支付是否在线支付</td>
+      <td>
+        <input type="radio" name="is_online" value="1"   />开启    
+        <input type="radio" name="is_online" value="0"  />关闭    
       </td>
     </tr>
     <tr>

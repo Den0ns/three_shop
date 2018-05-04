@@ -2,8 +2,9 @@
 namespace app\admin\Controller;
 use think\Controller;
 use think\Request;
+use app\admin\Common;
 
-class Index extends Controller
+class Index extends Common
 {
     public function index()
     {

@@ -3,9 +3,10 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;  
 use app\admin\model\Attr;
+use app\admin\Common;
 use app\admin\model\Goodstype as Goodstype_model;
 
-class Goodstype extends Controller
+class Goodstype extends Common
 {
     public function goodstype_list()
     {

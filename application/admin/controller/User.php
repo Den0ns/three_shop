@@ -3,10 +3,11 @@ namespace app\admin\Controller;
 use think\Controller;
 use think\Request;  
 use think\Paginator;  
+use app\admin\Common;
 use app\admin\model\User_rank; 
 use app\admin\model\User_model; 
 
-class User extends Controller
+class User extends Common
 {   
     //会员列表
     public function user_list()
@@ -15,7 +16,7 @@ class User extends Controller
          $user = new User_model();
         // $data = $user->select();
         $data = $user->paginate(3);
-
+        $arr = array();
         foreach ($data as $key => $value) {
             $arr[] = $value->toArray();
         }
@@ -44,6 +45,7 @@ class User extends Controller
     //会员等级列表
      public function userrank_list()
     {
+        $arr = array();
         $user = new User_rank();
         $data = $user->select();
         foreach ($data as $key => $value) {

@@ -16,6 +16,11 @@
   .panel-hint{
     top: 3%;
   }
+  .text{text-align:center;}
+  .pagination{text-align:center;margin-top:20px;margin-bottom: 20px;}  
+.pagination li{margin:0px 10px; border:1px solid #e6e6e6;padding: 3px 8px;display: inline-block;}  
+.pagination .active{background-color: #46A3FF;color: #fff;}  
+.pagination .disabled{color:#aaa;} 
 </style>
 <script language="JavaScript">
 <!--
@@ -68,275 +73,58 @@
 <!-- start ads list -->
 <div class="list-div" id="listDiv">
 
-<table cellpadding="3" cellspacing="1">
+<table cellpadding="3" cellspacing="1" class="text">
+<center>  
   <tr>
     <th><a href="javascript:listTable.sort('ad_name'); ">广告名称</a><img src="__STATIC__/admin/images/sort_desc.gif"/></th>
-    <th><a href="javascript:listTable.sort('position_id'); ">广告位置</a></th>
-    <th><a href="javascript:listTable.sort('media_type'); ">媒介类型</a></th>
-    <th><a href="javascript:listTable.sort('start_date'); ">开始日期</a></th>
-    <th><a href="javascript:listTable.sort('end_date'); ">结束日期</a></th>
-    <th><a href="javascript:listTable.sort('click_count'); ">点击次数</a></th>
-    <th>生成订单</th>
+    <th><a href="javascript:listTable.sort('position_id'); ">广告链接</a></th>
+    <th><a href="javascript:listTable.sort('media_type'); ">是否启用</a></th>
+    <th><a href="javascript:listTable.sort('click_count'); ">广告图片</a></th>
     <th>操作</th>
   </tr>
-    <tr>
+   {volist name="res" id="v"}
+    <tr class="text">
     <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 7)">首页广告4</span>
+    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 9)">{$v.ad_name}</span>
     </td>
-    <td align="left"><span>首页广告4</span>
+    <td align="text">{$v.ad_img}<span></span>
     </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-09</span></td>
-    <td align="center"><span>2016-06-08</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=7" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(7, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
+    <td align="text"><span>
+            {if condition="$v.ad_status == 1"}  
+          <a href="">上架 </a> 
+    {else /}  
+          <a href="">下架 </a> 
+    {/if}
+    </span></td>
+    <td align="text"><span><a href="__ROOT__/uploads/{$v.ad_img}"><img src="__ROOT__/uploads/{$v.ad_img}" width="250px" height="80px" /></a></span></td>
+    <td align="text">
+        <span>
+            <a href="up?id={$v.ad_id}" title="编辑">编辑</a>
+            <a href="del?id={$v.ad_id}" class="ad_del" alt="" >删除</a>
+        </span>
     </td>
   </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 6)">首页广告3</span>
-    </td>
-    <td align="left"><span>首页广告3</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-09</span></td>
-    <td align="center"><span>2016-06-08</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=6" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(6, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 5)">首页广告2</span>
-    </td>
-    <td align="left"><span>首页广告2</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-09</span></td>
-    <td align="center"><span>2016-06-08</span></td>
-    <td align="right"><span>1</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=5" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(5, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 4)">首页广告1</span>
-    </td>
-    <td align="left"><span>首页广告1</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-09</span></td>
-    <td align="center"><span>2016-06-08</span></td>
-    <td align="right"><span>1</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=4" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(4, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 3)">测试广告3</span>
-    </td>
-    <td align="left"><span>banner3</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-07</span></td>
-    <td align="center"><span>2016-06-06</span></td>
-    <td align="right"><span>2</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=3" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(3, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 2)">测试广告2</span>
-    </td>
-    <td align="left"><span>banner2</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-07</span></td>
-    <td align="center"><span>2017-06-06</span></td>
-    <td align="right"><span>6</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=2" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(2, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 1)">测试广告</span>
-    </td>
-    <td align="left"><span>banner1</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-04-30</span></td>
-    <td align="center"><span>2018-05-30</span></td>
-    <td align="right"><span>4</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=1" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(1, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 8)">团购广告</span>
-    </td>
-    <td align="left"><span>团购广告位</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-09</span></td>
-    <td align="center"><span>2016-06-08</span></td>
-    <td align="right"><span>2</span></td>
-    <td align="right"><span>1</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=8" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(8, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 15)">3层左侧广告</span>
-    </td>
-    <td align="left"><span>3层左侧广告</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-09</span></td>
-    <td align="center"><span>2016-06-08</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=15" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(15, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 14)">2层左侧广告2</span>
-    </td>
-    <td align="left"><span>2层左侧广告2</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-08</span></td>
-    <td align="center"><span>2016-06-07</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=14" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(14, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 13)">2层左侧广告1</span>
-    </td>
-    <td align="left"><span>2层左侧广告1</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-08</span></td>
-    <td align="center"><span>2016-06-07</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=13" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(13, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 12)">1层左侧广告4</span>
-    </td>
-    <td align="left"><span>1层左侧广告4</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-08</span></td>
-    <td align="center"><span>2016-06-07</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=12" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(12, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 11)">1层左侧广告3</span>
-    </td>
-    <td align="left"><span>1层左侧广告3</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-08</span></td>
-    <td align="center"><span>2016-06-07</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=11" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(11, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 10)">1层左侧广告2</span>
-    </td>
-    <td align="left"><span>1层左侧广告2</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-09</span></td>
-    <td align="center"><span>2016-06-08</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=10" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(10, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
-    <tr>
-    <td class="first-cell">
-    <span onclick="javascript:listTable.edit(this, 'edit_ad_name', 9)">1层左侧广告1</span>
-    </td>
-    <td align="left"><span>1层左侧广告1</span>
-    </td>
-    <td align="left"><span>图片</span></td>
-    <td align="center"><span>2016-05-09</span></td>
-    <td align="center"><span>2016-06-08</span></td>
-    <td align="right"><span>1</span></td>
-    <td align="right"><span>0</span></td>
-    <td align="right"><span>
-            <a href="ads.php?act=edit&id=9" title="编辑"><img src="__STATIC__/admin/images/icon_edit.gif" border="0" height="16" width="16" /></a>
-      <a href="javascript:;" onclick="listTable.remove(9, '您确认要删除这条记录吗?')" title="移除"><img src="__STATIC__/admin/images/icon_drop.gif" border="0" height="16" width="16" /></a></span>
-    </td>
-  </tr>
+  {/volist}
     <tr>
     <td align="right" nowrap="true" colspan="10">      <!-- $Id: page.htm 14216 2008-03-10 02:27:21Z testyang $ -->
             <div id="turn-page">
-        总计  <span id="totalRecords">15</span>
-        个记录分为 <span id="totalPages">1</span>
-        页当前第 <span id="pageCurrent">1</span>
-        页，每页 <input type='text' size='3' id='pageSize' value="15" onkeypress="return listTable.changePageSize(event)" />
+        总计  <span id="totalRecords">{$count}</span>
+        个记录分为一页<span id="totalPages">{$page_res}</span>
+        条当前第 <span id="pageCurrent">{$page_size}</span>
+        页
         <span id="page-link">
-          <a href="javascript:listTable.gotoPageFirst()">第一页</a>
-          <a href="javascript:listTable.gotoPagePrev()">上一页</a>
+        {$res->render()}
+          <!-- <a href="javascript:listTable.gotoPageFirst()"></a> -->
+        
+<!--           <a href="javascript:listTable.gotoPagePrev()">上一页</a>
           <a href="javascript:listTable.gotoPageNext()">下一页</a>
-          <a href="javascript:listTable.gotoPageLast()">最末页</a>
-          <select id="gotoPage" onchange="listTable.gotoPage(this.value)">
-            <option value='1'>1</option>          </select>
+          <a href="javascript:listTable.gotoPageLast()">最末页</a> -->
         </span>
+
       </div>
 </td>
   </tr>
+</center>
 </table>
 
 </div>
@@ -365,8 +153,30 @@
   </table>
 </div>
 
-
+<script type="text/javascript" src="__STATIC__/admin/js/jquery-1.8.2.min.js"></script>
 <script language="JavaScript">
+//单删
+        // $('.ad_del').click(function(){  
+        //    var ad_id  = $(this).attr('alt'); 
+        //    obj=$(this);
+        //    // var _this = $('.ad_del'); 
+        //    //alert(obj) 
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "{:url('Advert/del')}",
+        //         data: "ad_id="+ad_id,
+        //         dataType: "json",
+        //         success:function(msg){
+        //          if(msg.status==1){
+        //             obj.parent().parent().parent("tr").remove();
+        //             alert("删除成功");
+        //          }
+        //          if(msg.status==2){
+        //             alert("删除失败");
+        //          }
+        //         }
+        //     });  
+        // })  
 // document.onmousemove=function(e)
 // {
 //   var obj = Utils.srcElement(e);

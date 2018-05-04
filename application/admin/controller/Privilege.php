@@ -2,8 +2,9 @@
 namespace app\admin\Controller;
 use think\Controller;
 use think\Request;   
+use app\admin\Common;
 
-class Privilege extends Controller
+class Privilege extends Common
 {
     //管理员列表
     public function Privilege_list()

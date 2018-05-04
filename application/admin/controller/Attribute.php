@@ -4,8 +4,9 @@ use think\Controller;
 use think\Request;   
 use app\admin\model\Attr;
 use app\admin\model\Goodstype;
+use app\admin\Common;
 
-class Attribute extends Controller
+class Attribute extends Common
 {
     public function attribute_list()
     {
